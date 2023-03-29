@@ -32,6 +32,6 @@ function divisibleSumPair(m, d, arr) {
       count++;
     }
   }
-  console.log(count);
+  console.log(`${count}`);
 }
 divisibleSumPair(m, d, arr);
