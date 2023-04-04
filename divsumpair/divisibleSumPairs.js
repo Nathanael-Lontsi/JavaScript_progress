@@ -24,7 +24,7 @@ const arr = [1, 2, 3, 4, 5, 6],
   d = 5,
   m = 6;
 
-function divisibleSumPair(m, d, arr) {
+function divideSumPair(m, d, arr) {
   let count = 0;
   for (let i = 0; i <= m - 2; i++) {
     for (let j = i + 1; j <= m - 1; j++) {
@@ -34,4 +34,4 @@ function divisibleSumPair(m, d, arr) {
   }
   console.log(`${count}`);
 }
-divisibleSumPair(m, d, arr);
+divideSumPair(m, d, arr);
