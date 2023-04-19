@@ -12,10 +12,10 @@ function flippingBits(n) {
 
   // Change numbers (0 to 1) and (1 to 0)
   const array = binary.split("").map(function (number) {
-    if (number == "1") {
-      return 0;
-    } else {
+    if (number == "0") {
       return 1;
+    } else {
+      return 0;
     }
   });
 
