@@ -1,3 +1,5 @@
+// Example 1
+
 const A = [0, 1],
   B = [0, 2],
   k = 1;
@@ -12,5 +14,21 @@ function twoArrays(k, A, B) {
     }
   }
   console.log(permute);
+  console.log("NO");
 }
 twoArrays(k, A, B);
+
+// Example 2
+
+function tooArrays(k, A, B) {
+  const a = A.sort((a, b) => b - a);
+  let permutation = "YES";
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] + B[i] > k) {
+      console.log((permutation = "NO"));
+    }
+  }
+  console.log(permutation);
+  console.log("NO");
+}
+tooArrays(10, [2, 1, 3], [7, 8, 9]);
