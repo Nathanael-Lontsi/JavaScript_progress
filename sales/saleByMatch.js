@@ -1,5 +1,4 @@
 function sockMerchant(n, ar) {
-  // Write your code here
   let count = 0;
   ar.sort();
   for (let i = 0; i < n; i++) {
